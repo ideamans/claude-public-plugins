@@ -1,0 +1,18 @@
+{
+  "name": "ideamans-plugins-local",
+  "owner": {
+    "name": "Ideamans Inc. (local dev)",
+    "email": "support@ideamans.com"
+  },
+  "metadata": {
+    "description": "Local testbed for ideamans-plugins — iterates on plugin content before the upstream repo is pushed. Do not consume in production. See README for usage."
+  },
+  "plugins": [
+    {
+      "name": "gridgram",
+      "source": "./gridgram",
+      "description": "Adds /gg-render, /gg-icons, and /gg-author skills for authoring grid-based diagrams with gridgram.",
+      "license": "MIT"
+    }
+  ]
+}

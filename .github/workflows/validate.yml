@@ -1,0 +1,45 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  marketplace:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Claude Code CLI
+        # Claude Code ships the `claude plugin validate` subcommand used for
+        # marketplace schema checks. The install script puts it at
+        # ~/.local/bin/claude, which is already on PATH for bash steps.
+        run: |
+          curl -fsSL https://code.claude.com/install.sh | bash
+          claude --version
+
+      - name: Validate marketplace manifest
+        run: claude plugin validate .
+
+      - name: Validate each listed plugin source that lives in this repo
+        # A plugin entry with a relative `source: "./…"` lives inside this
+        # repository. Loop through any such entries and validate them too.
+        # For GitHub / npm / git-subdir sources we skip — they're validated
+        # in their home repos.
+        run: |
+          python3 - <<'PY'
+          import json, subprocess, sys, pathlib
+          manifest = json.load(open('.claude-plugin/marketplace.json'))
+          failed = False
+          for p in manifest.get('plugins', []):
+              src = p.get('source')
+              if isinstance(src, str) and src.startswith('./'):
+                  path = pathlib.Path(src).resolve()
+                  print(f"Validating local plugin: {path}")
+                  r = subprocess.run(['claude', 'plugin', 'validate', str(path)])
+                  if r.returncode != 0:
+                      failed = True
+          sys.exit(1 if failed else 0)
+          PY

@@ -1,0 +1,27 @@
+{
+  "name": "ideamans-plugins",
+  "owner": {
+    "name": "Ideamans Inc.",
+    "email": "support@ideamans.com"
+  },
+  "metadata": {
+    "description": "Claude Code plugins published by Ideamans — starting with gridgram (grid-based diagrams) and expanding from there.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "gridgram",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/gridgram.git",
+        "path": "plugins/gridgram"
+      },
+      "description": "Adds /gg-render, /gg-icons, and /gg-author skills for authoring grid-based diagrams with gridgram.",
+      "homepage": "https://github.com/ideamans/gridgram",
+      "repository": "https://github.com/ideamans/gridgram",
+      "license": "MIT",
+      "keywords": ["diagram", "svg", "tabler", "dsl", "grid", "llm"],
+      "category": "productivity"
+    }
+  ]
+}

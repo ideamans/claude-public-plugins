@@ -7,7 +7,7 @@ Each plugin is an [Agent Skills](https://agentskills.io/) bundle, so the underly
 ## Quick install (Claude Code)
 
 ```
-/plugin marketplace add ideamans/claude-public-plugins
+/plugin marketplace add https://github.com/ideamans/claude-public-plugins.git
 /plugin install gridgram@ideamans-plugins
 ```
 

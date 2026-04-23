@@ -1,4 +1,4 @@
-# ideamans/claude-plugins
+# ideamans/claude-public-plugins
 
 Claude Code plugin marketplace maintained by [Ideamans Inc.](https://ideamans.com).
 
@@ -7,7 +7,7 @@ Each plugin is an [Agent Skills](https://agentskills.io/) bundle, so the underly
 ## Quick install (Claude Code)
 
 ```
-/plugin marketplace add ideamans/claude-plugins
+/plugin marketplace add ideamans/claude-public-plugins
 /plugin install gridgram@ideamans-plugins
 ```
 
@@ -36,7 +36,7 @@ Source: [ideamans/gridgram](https://github.com/ideamans/gridgram) → `plugins/g
 ## Structure
 
 ```
-claude-plugins/
+claude-public-plugins/
 ├── .claude-plugin/
 │   └── marketplace.json   # catalog consumed by /plugin marketplace add
 └── README.md
@@ -72,7 +72,7 @@ claude plugin validate ./gridgram      # checks the plugin directly
 #    Swap marketplace.json with the local variant just for this test.
 cp .claude-plugin/marketplace.local.json /tmp/mp/.claude-plugin/marketplace.json
 # …or run Claude Code with CLAUDE_CODE_PLUGIN_CACHE_DIR=$(mktemp -d) and
-# /plugin marketplace add /abs/path/to/claude-plugins
+# /plugin marketplace add /abs/path/to/claude-public-plugins
 ```
 
 The symlink is stable across checkouts because this repo's `.gitignore`

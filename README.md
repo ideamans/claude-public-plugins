@@ -9,12 +9,14 @@ Each plugin is an [Agent Skills](https://agentskills.io/) bundle, so the underly
 ```
 /plugin marketplace add ideamans/claude-public-plugins
 /plugin install gridgram@ideamans-plugins
+/plugin install chartjs2img@ideamans-plugins
 ```
 
 Then verify with:
 
 ```
-/gg-render --help     # skill is live when /gg-* autocompletes
+/gg-render --help            # gridgram skill is live when /gg-* autocompletes
+/chartjs2img-render --help   # chartjs2img skill is live when /chartjs2img-* autocompletes
 ```
 
 ## Available plugins
@@ -32,6 +34,21 @@ Runtime dependency: the `gg` CLI must be on `PATH`. Install from
 or (once published) `bun install -g gridgram`.
 
 Source: [ideamans/gridgram](https://github.com/ideamans/gridgram) → `plugins/gridgram/`
+
+### chartjs2img
+
+Server-side Chart.js rendering — turn a Chart.js config JSON into a PNG / JPEG using headless Chromium. Three skills:
+
+- **`/chartjs2img-render`** — render a Chart.js config JSON to an image; echo `X-Chart-Messages` / stderr warnings
+- **`/chartjs2img-author`** — compose a new Chart.js config from a description, validate via render-and-iterate
+- **`/chartjs2img-install`** — install / update the `chartjs2img` CLI from GitHub Releases, cross-platform
+
+Runtime dependency: the `chartjs2img` CLI must be on `PATH`. Install via
+`/chartjs2img-install` or from
+[ideamans/chartjs2img releases](https://github.com/ideamans/chartjs2img/releases).
+Chromium is auto-downloaded on first render.
+
+Source: [ideamans/chartjs2img](https://github.com/ideamans/chartjs2img) → `plugins/chartjs2img/`
 
 ## Structure
 
@@ -56,17 +73,20 @@ before pushing, use the local variant instead:
 ```
 .claude-plugin/marketplace.local.json   # relative-path sources
 gridgram                                # symlink → ../gridgram/plugins/gridgram
+chartjs2img                             # symlink → ../chartjs2img/plugins/chartjs2img
 ```
 
 Workflow:
 
 ```bash
-# 1. Point the symlink at your checkout (already done for gridgram).
+# 1. Point the symlinks at your checkouts.
 ln -sfn ~/dev/gridgram/plugins/gridgram ./gridgram
+ln -sfn ~/dev/chartjs2img/plugins/chartjs2img ./chartjs2img
 
 # 2. Validate the schema and every listed plugin.
-claude plugin validate .               # checks marketplace.json (GitHub sources)
-claude plugin validate ./gridgram      # checks the plugin directly
+claude plugin validate .                  # checks marketplace.json (GitHub sources)
+claude plugin validate ./gridgram         # checks the plugin directly
+claude plugin validate ./chartjs2img
 
 # 3. Register the local marketplace in a test Claude Code session.
 #    Swap marketplace.json with the local variant just for this test.
@@ -75,8 +95,8 @@ cp .claude-plugin/marketplace.local.json /tmp/mp/.claude-plugin/marketplace.json
 # /plugin marketplace add /abs/path/to/claude-public-plugins
 ```
 
-The symlink is stable across checkouts because this repo's `.gitignore`
-does not track `gridgram/` (it resolves at test time).
+The symlinks are stable across checkouts because this repo's `.gitignore`
+excludes `gridgram/` and `chartjs2img/` (they resolve at test time).
 
 ## Adding a new plugin
 

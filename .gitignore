@@ -3,6 +3,7 @@ node_modules/
 *.log
 .claude/
 
-# Local-dev symlink into ../gridgram/plugins/gridgram (see README "Local
+# Local-dev symlinks into sibling plugin repos (see README "Local
 # development"). Resolved on developer machines; never committed.
 /gridgram
+/chartjs2img

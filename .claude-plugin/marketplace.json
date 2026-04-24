@@ -22,6 +22,20 @@
       "license": "MIT",
       "keywords": ["diagram", "svg", "tabler", "dsl", "grid", "llm"],
       "category": "productivity"
+    },
+    {
+      "name": "chartjs2img",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/chartjs2img.git",
+        "path": "plugins/chartjs2img"
+      },
+      "description": "Adds /chartjs2img-render, /chartjs2img-author, and /chartjs2img-install skills for generating Chart.js charts as server-rendered PNG/JPEG images.",
+      "homepage": "https://github.com/ideamans/chartjs2img",
+      "repository": "https://github.com/ideamans/chartjs2img",
+      "license": "MIT",
+      "keywords": ["chart", "chartjs", "image", "png", "visualization", "llm"],
+      "category": "productivity"
     }
   ]
 }

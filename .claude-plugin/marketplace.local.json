@@ -13,6 +13,12 @@
       "source": "./gridgram",
       "description": "Adds /gg-render, /gg-icons, and /gg-author skills for authoring grid-based diagrams with gridgram.",
       "license": "MIT"
+    },
+    {
+      "name": "chartjs2img",
+      "source": "./chartjs2img",
+      "description": "Adds /chartjs2img-render, /chartjs2img-author, and /chartjs2img-install skills for generating Chart.js charts as server-rendered PNG/JPEG images.",
+      "license": "MIT"
     }
   ]
 }

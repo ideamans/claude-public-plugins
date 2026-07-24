@@ -20,7 +20,14 @@
       "homepage": "https://github.com/ideamans/gridgram",
       "repository": "https://github.com/ideamans/gridgram",
       "license": "MIT",
-      "keywords": ["diagram", "svg", "tabler", "dsl", "grid", "llm"],
+      "keywords": [
+        "diagram",
+        "svg",
+        "tabler",
+        "dsl",
+        "grid",
+        "llm"
+      ],
       "category": "productivity"
     },
     {
@@ -34,7 +41,147 @@
       "homepage": "https://github.com/ideamans/chartjs2img",
       "repository": "https://github.com/ideamans/chartjs2img",
       "license": "MIT",
-      "keywords": ["chart", "chartjs", "image", "png", "visualization", "llm"],
+      "keywords": [
+        "chart",
+        "chartjs",
+        "image",
+        "png",
+        "visualization",
+        "llm"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "apple-app-store-connect-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/apple-app-store-connect-cli.git",
+        "path": "plugins/apple-app-store-connect-cli"
+      },
+      "description": "Adds /asc-usage and /asc-install skills for the App Store Connect API: apps, versions, builds, TestFlight, in-app purchases, pricing, availability, screenshots and submission.",
+      "homepage": "https://github.com/ideamans/apple-app-store-connect-cli",
+      "repository": "https://github.com/ideamans/apple-app-store-connect-cli",
+      "license": "MIT",
+      "keywords": [
+        "apple",
+        "app-store-connect",
+        "ios",
+        "testflight",
+        "cli",
+        "llm",
+        "agent"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "google-play-developer-publishing-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/google-play-developer-publishing-cli.git",
+        "path": "plugins/google-play-developer-publishing-cli"
+      },
+      "description": "Adds /gplay-usage and /gplay-install skills for the Google Play Developer Publishing API (Android Publisher v3) — upload AABs, manage tracks and staged rollouts, edit store listings, handle in-app products and subscriptions, and read reviews and orders.",
+      "homepage": "https://github.com/ideamans/google-play-developer-publishing-cli",
+      "repository": "https://github.com/ideamans/google-play-developer-publishing-cli",
+      "license": "MIT",
+      "keywords": [
+        "google-play",
+        "android",
+        "publishing",
+        "release",
+        "cli",
+        "llm",
+        "agent"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "crux-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/crux-cli.git",
+        "path": "plugins/crux-cli"
+      },
+      "description": "Adds /crux-usage and /crux-install skills for querying Chrome UX Report (CrUX) real-user performance data — Core Web Vitals for any origin or URL, from BigQuery or the CrUX API.",
+      "homepage": "https://github.com/ideamans/crux-cli",
+      "repository": "https://github.com/ideamans/crux-cli",
+      "license": "MIT",
+      "keywords": [
+        "crux",
+        "core-web-vitals",
+        "performance",
+        "lcp",
+        "inp",
+        "cls",
+        "cli",
+        "llm"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "hatena-blog-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/hatena-blog-cli.git",
+        "path": "plugins/hatena-blog-cli"
+      },
+      "description": "Adds /hatena-blog-usage and /hatena-blog-install skills for publishing to Hatena Blog (はてなブログ) from the command line: create, fetch, update and delete entries via AtomPub, with Markdown, Hatena syntax or HTML bodies.",
+      "homepage": "https://github.com/ideamans/hatena-blog-cli",
+      "repository": "https://github.com/ideamans/hatena-blog-cli",
+      "license": "MIT",
+      "keywords": [
+        "hatena",
+        "blog",
+        "atompub",
+        "publishing",
+        "cli",
+        "llm",
+        "agent"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "mfk-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/mfk-cli.git",
+        "path": "plugins/mfk-cli"
+      },
+      "description": "Adds /mfk-usage and /mfk-install skills for the Money Forward Kessai (マネーフォワードケッサイ) API v2 — customers, credit examinations, billings, transactions, payouts and destinations from the command line.",
+      "homepage": "https://github.com/ideamans/mfk-cli",
+      "repository": "https://github.com/ideamans/mfk-cli",
+      "license": "MIT",
+      "keywords": [
+        "money-forward",
+        "kessai",
+        "invoice",
+        "billing",
+        "cli",
+        "llm",
+        "agent"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "misoca-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/misoca-cli.git",
+        "path": "plugins/misoca-cli"
+      },
+      "description": "Adds /misoca-usage and /misoca-install skills for Misoca — create and fetch invoices (請求書), estimates (見積書) and delivery slips (納品書), download their PDFs, and manage contacts, contact groups and items from the command line.",
+      "homepage": "https://github.com/ideamans/misoca-cli",
+      "repository": "https://github.com/ideamans/misoca-cli",
+      "license": "MIT",
+      "keywords": [
+        "misoca",
+        "invoice",
+        "estimate",
+        "accounting",
+        "cli",
+        "llm",
+        "agent"
+      ],
       "category": "productivity"
     }
   ]

@@ -191,7 +191,7 @@
         "url": "https://github.com/ideamans/rakkokeyword-cli.git",
         "path": "plugins/rakkokeyword-cli"
       },
-      "description": "Adds /rakko-usage and /rakko-install skills for keyword research with the rakkokeyword (ラッコキーワード) API — search suggestions, SEO metrics, Google rank checks, competitor analysis and content briefs for the Japanese search market.",
+      "description": "Adds /rakkokeyword-usage and /rakkokeyword-install skills for keyword research with the rakkokeyword (ラッコキーワード) API — search suggestions, SEO metrics, Google rank checks, competitor analysis and content briefs for the Japanese search market.",
       "homepage": "https://github.com/ideamans/rakkokeyword-cli",
       "repository": "https://github.com/ideamans/rakkokeyword-cli",
       "license": "MIT",

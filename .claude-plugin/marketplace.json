@@ -183,6 +183,49 @@
         "agent"
       ],
       "category": "productivity"
+    },
+    {
+      "name": "rakkokeyword-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/rakkokeyword-cli.git",
+        "path": "plugins/rakkokeyword-cli"
+      },
+      "description": "Adds /rakkokeyword-usage and /rakkokeyword-install skills for keyword research with the rakkokeyword (ラッコキーワード) API — search suggestions, SEO metrics, Google rank checks, competitor analysis and content briefs for the Japanese search market.",
+      "homepage": "https://github.com/ideamans/rakkokeyword-cli",
+      "repository": "https://github.com/ideamans/rakkokeyword-cli",
+      "license": "MIT",
+      "keywords": [
+        "rakkokeyword",
+        "seo",
+        "keyword-research",
+        "serp",
+        "japanese",
+        "cli",
+        "llm"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "vultr-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/vultr-cli.git",
+        "path": "plugins/vultr-cli"
+      },
+      "description": "Adds /vultr-usage and /vultr-install skills for driving the Vultr API from the command line: instances, block storage, DNS, load balancers, Kubernetes and every other Vultr service.",
+      "homepage": "https://github.com/ideamans/vultr-cli",
+      "repository": "https://github.com/ideamans/vultr-cli",
+      "license": "MIT",
+      "keywords": [
+        "vultr",
+        "cloud",
+        "infrastructure",
+        "cli",
+        "llm",
+        "agent"
+      ],
+      "category": "productivity"
     }
   ]
 }

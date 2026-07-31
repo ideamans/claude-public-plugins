@@ -226,6 +226,94 @@
         "agent"
       ],
       "category": "productivity"
+    },
+    {
+      "name": "static-webshot",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/static-webshot.git",
+        "path": "plugins/static-webshot"
+      },
+      "description": "Adds /static-webshot-usage and /static-webshot-install skills for deterministic web page screenshots and visual regression diffs — animations, carousels, autoplay and clocks are suppressed so the same page renders identically twice.",
+      "homepage": "https://github.com/ideamans/static-webshot",
+      "repository": "https://github.com/ideamans/static-webshot",
+      "license": "MIT",
+      "keywords": [
+        "screenshot",
+        "visual-regression",
+        "deterministic",
+        "chrome",
+        "diff",
+        "testing",
+        "cli"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "gitlab-op",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/gitlab-op.git",
+        "path": "plugins/gitlab-op"
+      },
+      "description": "Adds /gitlab-op-usage and /gitlab-op-install skills for provisioning GitLab: creating groups and projects and inviting people to them, against self-hosted GitLab or gitlab.com, with per-instance credential profiles.",
+      "homepage": "https://github.com/ideamans/gitlab-op",
+      "repository": "https://github.com/ideamans/gitlab-op",
+      "license": "MIT",
+      "keywords": [
+        "gitlab",
+        "group",
+        "project",
+        "invite",
+        "provisioning",
+        "cli"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "go-loadshow",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/go-loadshow.git",
+        "path": "plugins/go-loadshow"
+      },
+      "description": "Adds /loadshow-usage and /loadshow-install skills for recording web page loads as MP4 video and placing two recordings side by side, with network and CPU throttling so the result resembles a real visit.",
+      "homepage": "https://github.com/ideamans/go-loadshow",
+      "repository": "https://github.com/ideamans/go-loadshow",
+      "license": "MIT",
+      "keywords": [
+        "loadshow",
+        "web-performance",
+        "video",
+        "page-load",
+        "throttling",
+        "visualization",
+        "cli"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "rust-http-playback-proxy",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/rust-http-playback-proxy.git",
+        "path": "plugins/rust-http-playback-proxy"
+      },
+      "description": "Adds /http-playback-proxy-usage and /http-playback-proxy-install skills for recording a web page's HTTP traffic and replaying it with the original timing, so page-speed work can be measured against a target that does not change between runs.",
+      "homepage": "https://github.com/ideamans/rust-http-playback-proxy",
+      "repository": "https://github.com/ideamans/rust-http-playback-proxy",
+      "license": "MIT",
+      "keywords": [
+        "proxy",
+        "http",
+        "recording",
+        "playback",
+        "web-performance",
+        "deterministic",
+        "mitm",
+        "cli"
+      ],
+      "category": "productivity"
     }
   ]
 }

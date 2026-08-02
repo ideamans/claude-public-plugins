@@ -314,6 +314,28 @@
         "cli"
       ],
       "category": "productivity"
+    },
+    {
+      "name": "mautic-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/mautic-cli.git",
+        "path": "plugins/mautic-cli"
+      },
+      "description": "Adds /mautic-usage and /mautic-install skills for Mautic marketing automation — read and write contacts, segments, campaigns and emails, query the stats tables for traffic and email performance, and switch between Mautic instances with named credential profiles.",
+      "homepage": "https://github.com/ideamans/mautic-cli",
+      "repository": "https://github.com/ideamans/mautic-cli",
+      "license": "MIT",
+      "keywords": [
+        "mautic",
+        "marketing-automation",
+        "crm",
+        "email-marketing",
+        "cli",
+        "llm",
+        "agent"
+      ],
+      "category": "productivity"
     }
   ]
 }

@@ -336,6 +336,30 @@
         "agent"
       ],
       "category": "productivity"
+    },
+    {
+      "name": "gemini-image-recognize-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ideamans/gemini-image-recognize-cli.git",
+        "path": "plugins/gemini-image-recognize-cli"
+      },
+      "description": "Adds /gemini-image-recognize-usage and /gemini-image-recognize-install skills for describing images with Gemini: captions and text transcription for search indexes, batch indexing to JSON Lines, and automatic downscaling to fit an upload ceiling.",
+      "homepage": "https://github.com/ideamans/gemini-image-recognize-cli",
+      "repository": "https://github.com/ideamans/gemini-image-recognize-cli",
+      "license": "MIT",
+      "keywords": [
+        "gemini",
+        "image",
+        "vision",
+        "caption",
+        "ocr",
+        "search-index",
+        "cli",
+        "llm",
+        "agent"
+      ],
+      "category": "productivity"
     }
   ]
 }

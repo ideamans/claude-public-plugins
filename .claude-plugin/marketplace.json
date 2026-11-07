@@ -408,15 +408,15 @@
       "category": "productivity"
     },
     {
-      "name": "movable-type-builder-cli",
+      "name": "mtb",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/ideamans/movable-type-builder-cli.git",
-        "path": "plugins/movable-type-builder-cli"
+        "url": "https://github.com/ideamans/mtb.git",
+        "path": "plugins/mtb"
       },
       "description": "Makes Claude a Movable Type site builder: the mtb CLI builds MT sites from the command line — templates, categories, custom fields, assets and content — on top of the Data API v7, plus skills for developing themes as files, migrating a design between servers, and reference skills for MT's object model, roles and permissions, archive types, and all 614 template tags and 48 global modifiers.",
-      "homepage": "https://github.com/ideamans/movable-type-builder-cli",
-      "repository": "https://github.com/ideamans/movable-type-builder-cli",
+      "homepage": "https://github.com/ideamans/mtb",
+      "repository": "https://github.com/ideamans/mtb",
       "license": "MIT",
       "keywords": [
         "movable type",
